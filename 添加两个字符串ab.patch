@@ -1,0 +1,16 @@
+Index: src/main/java/jooj/jjooj/Controller/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/jooj/jjooj/Controller/UserController.java	(date 1586500864000)
++++ src/main/java/jooj/jjooj/Controller/UserController.java	(date 1586501316461)
+@@ -13,6 +13,8 @@
+ @RequestMapping("/User")
+ public class UserController {
+     private String a="陈";
++    private String b="陈";
++
+     @Autowired
+     private UserService userService;
+ 

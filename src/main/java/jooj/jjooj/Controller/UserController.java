@@ -13,6 +13,8 @@ import java.util.List;
 @RequestMapping("/User")
 public class UserController {
     private String a="陈";
+    private String b="陈";
+
     @Autowired
     private UserService userService;
 
