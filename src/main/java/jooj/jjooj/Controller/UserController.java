@@ -1,0 +1,25 @@
+package jooj.jjooj.Controller;
+
+import jooj.jjooj.bean.User;
+import jooj.jjooj.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
+
+@Controller
+@RequestMapping("/User")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping("/selectUserList.do")
+    public String selectUserList(Model model){
+        List<User> users=userService.selectUserList();
+        model.addAttribute("users",users);
+        return "list";
+    }
+}
