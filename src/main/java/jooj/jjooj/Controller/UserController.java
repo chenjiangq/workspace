@@ -12,7 +12,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/User")
 public class UserController {
-
+    private String a="陈";
     @Autowired
     private UserService userService;
 
